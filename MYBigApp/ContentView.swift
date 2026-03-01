@@ -20,12 +20,12 @@ struct ContentView: View {
             Spacer()
             VStack{
                 HStack{
-                    BlueBlockView(catagory: "Feels like", value: "2", description: "Wind is making it fel colder.")
-                    BlueBlockView(catagory: "Feels like", value: "2", description: "Wind is making it fel colder.")
+                    BlueBlockView(catagory: "Feels like", value: "2", description: "Wind is making it fel colder.", image: "thermometer.low")
+                    BlueBlockView(catagory: "Feels like", value: "2", description: "Wind is making it fel colder.", image: "thermometer.low")
                 }
                 HStack{
-                    BlueBlockView(catagory: "Feels like", value: "2", description: "Wind is making it fel colder.")
-                    BlueBlockView(catagory: "Feels like", value: "2", description: "Wind is making it fel colder.")
+                    BlueBlockView(catagory: "Feels like", value: "2", description: "Wind is making it fel colder.", image: "thermometer.low")
+                    BlueBlockView(catagory: "Feels like", value: "2", description: "Wind is making it fel colder.", image: "thermometer.low")
                 }
             }
             BlackBlockView()
