@@ -29,13 +29,18 @@ struct BlueBlockView: View {
                         .foregroundColor(.white)
                         Spacer()
                     Text(description)
+                        
                         .foregroundColor(.white)
+                        
                 }
                 .padding()
-                .background(Color.blue)
+                .background(RoundedRectangle(cornerRadius: 25)
+                    .fill (Color.blue))
+                
+                
             
             }
-            
+       
             
             
             

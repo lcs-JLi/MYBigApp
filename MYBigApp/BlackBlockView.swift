@@ -13,10 +13,12 @@ struct BlackBlockView: View {
             var body: some View{
                 VStack{
                     Rectangle()
+                       
                     HStack{
                         Rectangle()
                         Rectangle()
                     }
+                    
                 
                 }
                 .padding()
