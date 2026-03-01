@@ -17,7 +17,9 @@ struct BlackBlockView: View {
                         Rectangle()
                         Rectangle()
                     }
+                
                 }
+                .padding()
                 
             }
             

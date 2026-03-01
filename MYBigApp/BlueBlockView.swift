@@ -23,8 +23,10 @@ struct BlueBlockView: View {
                         .foregroundColor(.pink)
                     Text(value)
                         .font(.largeTitle)
+                        .foregroundColor(.white)
                         Spacer()
                     Text(description)
+                        .foregroundColor(.white)
                 }
                 .padding()
                 .background(Color.blue)

@@ -15,9 +15,9 @@ struct ImformationView: View {
             var body: some View{
                 VStack{
                     Text(place)
-                        .font(.largeTitle)
-                    Text(weather)
                         .font(.title)
+                    Text(weather)
+                        .font(.title2)
                 }
                 
             }
