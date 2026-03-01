@@ -14,7 +14,7 @@ struct BlueBlockView: View {
     let description: String
             
             var body: some View{
-                VStack{
+                VStack(alignment: .leading){
                     
                     
                     
@@ -22,14 +22,18 @@ struct BlueBlockView: View {
                     Text(catagory)
                         .foregroundColor(.pink)
                     Text(value)
-                        .font(.title3)
+                        .font(.largeTitle)
+                        Spacer()
                     Text(description)
                 }
                 .padding()
                 .background(Color.blue)
+            
             }
             
             
             
             
         }
+
+

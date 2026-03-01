@@ -23,12 +23,17 @@ struct ContentView: View {
                 BlueBlockView(catagory: "Feels like", value: "2", description: "Wind is making it fel colder.")
             }
             
+            BlackBlockView()
         }
     }
+   
+    
 }
 
 
-        
+
+
+
         
         
         #Preview {
