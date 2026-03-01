@@ -38,13 +38,17 @@ struct ContentView: View {
             }
             .padding()
             BlackBlockView()
+                
+                
+            
+            }
             
         }
         
     }
         
     
-}
+
 
     
 
