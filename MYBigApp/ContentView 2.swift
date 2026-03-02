@@ -8,50 +8,41 @@
 import SwiftUI
 
 struct ContentView2: View {
-    @State private var selection = "Announcements"
-    
-    
     var body: some View {
-        NavigationStack{
-            
-        }
        
-            .navigationTitle("Announcements\(Image(systemName:"speaker.wave.2"))")
-           
-  
-        
-        
-        VStack{
-            ListView(title: "Airbands update", name: "David Crispo", date: "4/27/2022", image: "guitars")
+        TabView(selection: Binding.constant(1)) {
             
-            
-            
-            
-            
-            
-            
-            Spacer()
-            
-            Picker("Current Selection", selection: $selection){
-                VStack{
-                    
-                 
+            AnnouncementView()
+                .tabItem {
+                    Image(systemName: "person.wave.2.fill")
                     Text("Announcements")
-                    
                 }
+                .tag(1)
+            
+            SavedView()
+                .tabItem {
+                    Image(systemName: "star.fill")
+                    Text("Saved")
+                }
+                .tag(2)
+            
+            
+            
+            
+            
+           
                 
-              
+                
             }
-            .pickerStyle(.segmented)
+            
+            
+            
         }
-        
-        
         
     }
-}
-
-
-
+    
+    
+    
 
 
 
