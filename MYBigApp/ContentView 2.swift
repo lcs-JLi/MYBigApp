@@ -8,17 +8,41 @@
 import SwiftUI
 
 struct ContentView2: View {
+    @State private var selection = "Announcements"
+    
+    
     var body: some View {
         NavigationStack{
-            HStack{
-                Text("Announcements")
-                Text("\(Image(systemName:"speaker.wave.2"))")
-            }
-  
+            
         }
+       
+            .navigationTitle("Announcements\(Image(systemName:"speaker.wave.2"))")
+           
+  
+        
         
         VStack{
             ListView(title: "Airbands update", name: "David Crispo", date: "4/27/2022", image: "guitars")
+            
+            
+            
+            
+            
+            
+            
+            Spacer()
+            
+            Picker("Current Selection", selection: $selection){
+                VStack{
+                    
+                 
+                    Text("Announcements")
+                    
+                }
+                
+              
+            }
+            .pickerStyle(.segmented)
         }
         
         
