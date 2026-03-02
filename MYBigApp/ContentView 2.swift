@@ -17,6 +17,10 @@ struct ContentView2: View {
   
         }
         
+        VStack{
+            ListView(title: "Airbands update", name: "David Crispo", date: "4/27/2022", image: "guitars")
+        }
+        
         
         
     }
