@@ -7,12 +7,11 @@
 
 import SwiftUI
 
-struct MyBigApp2: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+@main
+struct MYBigApp2App: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView2()
+        }
     }
-}
-
-#Preview {
-    MyBigApp2()
 }
